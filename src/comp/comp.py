@@ -51,7 +51,8 @@ print(b)
 print("Starts between C and G, inclusive:")
 # c = [human.name for human in humans if human.name[0] == 'C' or 'D' or 'E' or 'F' or 'G']
 incl = ('C', 'D', 'E', 'F', 'G')
-c = [human.name for human in humans if human.name[0] in incl] #range only works with int
+# c = [human.name for human in humans if human.name[0] in incl] #range only works with int
+c = [human.name for human in humans if human.name[0]  > 'B' and human.name[0]< 'H']
 
 # for h in humans:
 #     if h.name[0] in ['C', 'D', 'E', 'F', 'G']:
